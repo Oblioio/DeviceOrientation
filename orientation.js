@@ -13,8 +13,16 @@
  * W3C Device Orientation control (http://w3c.github.io/deviceorientation/spec-source-orientation.html)
  */
 
-
-define([], function () {
+;(function (factory) {
+    if (typeof define === 'function' && define.amd) {
+        // AMD. Register as an anonymous module.
+        define([], function () {
+            return factory();
+        });
+    } else {
+        window.Orientation = factory();
+    }
+}(function () {
 
 	'use strict';
     
@@ -218,6 +226,5 @@ define([], function () {
         return Math.max( min, Math.min( max, value ) );
     }
     
-	
 	return Orientation;
-});
+}));
