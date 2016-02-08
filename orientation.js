@@ -1,4 +1,18 @@
-// Math is all basically ripped and reformated from THREEJS
+
+
+/**
+ * @author JonathanHooker http://twitter.com/jonathanhooker
+ 
+ * Code is all basically ripped and reformated from THREEJS
+ * That code worked great, but I wanted it to be self contained
+ * 
+ * @author mrdoob / http://github.com/mrdoob/three.js
+ * @author richt / http://richt.me
+ * @author WestLangley / http://github.com/WestLangley
+ *
+ * W3C Device Orientation control (http://w3c.github.io/deviceorientation/spec-source-orientation.html)
+ */
+
 
 define([], function () {
 
