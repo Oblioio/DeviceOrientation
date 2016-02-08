@@ -6,12 +6,12 @@ This file just takes all of the code from DeviceOrientationControls.js within th
 
 Just create a new instance of the class, pass a call back function, and the format you'd like the results in:
 
-new Orientation(callbackFn, "YXZ");
+> new Orientation(callbackFn, "YXZ");
 
 Accepted result types are:
 
-QUATERNION: "quaternion" or "quat"
-MATRIX: "matrix" or "mat"
-EULER ANGLES (use desired order): "xyz", "xzy", "yxz", "yzx", "zxy", "zyx"
+ - **QUATERNION**: "quaternion" or "quat"
+ - **MATRIX**: "matrix" or "mat"
+ - **EULER ANGLES** (use desired order): "xyz", "xzy", "yxz", "yzx", "zxy", "zyx"
 
 If none of those options are passed the callback function will receive the alpha, beta, gamma, and orient values;
