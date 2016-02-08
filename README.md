@@ -6,7 +6,7 @@ This file just takes all of the code from DeviceOrientationControls.js within th
 
 Just create a new instance of the class, pass a call back function, and the format you'd like the results in:
 
-> new Orientation(callbackFn, "YXZ");
+> var orientationListener = new Orientation(callbackFn, "YXZ");
 
 Accepted result types are:
 
