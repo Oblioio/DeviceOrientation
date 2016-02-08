@@ -4,7 +4,7 @@ This file just takes all of the code from DeviceOrientationControls.js within th
 
 # Use
 
-Currently the file is setup to be used with RequireJS. I should probably wrap it differently so it's not opinionated, but just haven't yet. Anyways, to use it you create a new instance of the class passing a callback function and the format you'd like the results in:
+The file is setup as a module which can be loaded with RequireJS, otherwise it will be attached globally as window.Orientation. To use it you create a new instance of the class passing a callback function and the format you'd like the results in:
 
 > var orientationListener = new Orientation(callbackFn, "YXZ");
 
